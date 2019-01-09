@@ -284,6 +284,21 @@ class Card extends AbstractApi
     }
 
     /**
+     * Set the value for a Custom Field on a card
+     * @link https://developers.trello.com/v1.0/reference#custom-fields
+     *
+     * @param string $id         the card's id
+     * @param string $cfid       the custom field's id
+     * @param bool   $value      the custom field's value
+     *
+     * @return array list info
+     */
+    public function setCustomField($id, $cfid, $value)
+    {
+        return $this->put($this->getPath().'/'.rawurlencode($id).'/customField/'.rawurlencode($cfid).'/item', array('value' => $value));
+    }
+    
+    /**
      * Actions API
      *
      * @return Card\Actions
