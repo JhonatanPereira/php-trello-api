@@ -6,7 +6,7 @@ PHP Trello API v1 client
 [![Code Quality](https://img.shields.io/scrutinizer/g/cdaguerre/php-trello-api.svg?style=flat-square)](https://scrutinizer-ci.com/g/cdaguerre/php-trello-api/)
 [![Packagist](https://img.shields.io/packagist/dt/cdaguerre/php-trello-api.svg?style=flat-square)](https://packagist.org/packages/cdaguerre/php-trello-api)
 
-A simple Object Oriented wrapper for the Trello API, written in PHP5.
+A simple Object Oriented wrapper for the Trello API, written in PHP5. Modified to support Custom Fields
 
 Uses [Trello API v1](https://trello.com/docs/index.html). The object API is very similar to the RESTful API.
 
